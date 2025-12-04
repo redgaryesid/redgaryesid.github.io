@@ -26,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'contactame',
         component: Contacto
+    },
+     {
+        path: '**',
+        redirectTo: '',pathMatch: 'full'
     }
 ];
