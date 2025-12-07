@@ -1,1 +1,3 @@
-<p>experiencia works!</p>
+@for (trabajo of trabajos; track $index) {
+    <app-experiencia-componente [trabajo]="trabajo"></app-experiencia-componente>
+}

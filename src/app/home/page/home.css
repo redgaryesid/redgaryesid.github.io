@@ -17,3 +17,11 @@
   from { border-color: transparent; }
   to { border-color: black; }
 }
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 5px #4ade80,
+    0 0 10px #4ade80,
+    0 0 20px #4ade80,
+    0 0 40px #4ade80;
+}

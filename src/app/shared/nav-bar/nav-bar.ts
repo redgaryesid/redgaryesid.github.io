@@ -11,6 +11,13 @@ export class NavBar {
 
   showMenu: boolean = false;
 
+  optionsMenu = [
+    { name: 'Inicio', route: '/',active: true },
+    { name: 'Experiencia', route: '/experiencia',active: true  },
+    { name: 'Portafolio', route: '/portafolio',active: true  },
+    { name: 'Blog', route: '/blog',active: false  },
+    { name: 'Contactame', route: '/contactame',active: false  }
+  ];
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }

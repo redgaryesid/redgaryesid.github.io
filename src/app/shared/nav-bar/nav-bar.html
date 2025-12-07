@@ -6,11 +6,13 @@
     </div>
     <div class="w-3/4 h-14 hidden xl:h16 xl:block">
         <ul class="flex flex-row flex-nowrap justify-end align-middle h-16 items-center">
-            <li class="ml-2 mr-2 cursor-pointer" routerLink="/">Inicio</li>
-            <li class="ml-2 mr-2 cursor-pointer" routerLink="/experiencia">Experiencia</li>
-            <li class="ml-2 mr-2 cursor-pointer" routerLink="/portafolio">Portafolio</li>
-            <li class="ml-2 mr-2 cursor-pointer" routerLink="/blog">Blog</li>
-            <li class="ml-2 mr-2 cursor-pointer" routerLink="/contactame">Contactame</li>
+            @for (option of optionsMenu; track $index) {
+                @if (option.active) {
+                    <li class="ml-2 mr-2 cursor-pointer" routerLink="{{option.route}}">{{option.name}}</li>    
+                }
+            
+            }
+            
         </ul>
     </div>
     <div class="flex justify-end w-full md:hidden">
@@ -30,11 +32,12 @@
 @if (showMenu) {
 <div class="w-full h-full z-50 absolute top-14 md:top-16 bg-amber-50 border">
     <ul class="font-medium flex flex-col items-center p-2 mt-1 mb-1 " (click)="showMenu = !showMenu">
-        <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="/">Inicio</li>
-        <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="/experiencia">Experiencia</li>
-        <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="/portafolio">Portafolio</li>
-        <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="/blog">Blog</li>
-        <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="/contactame">Contactame</li>
+        @for (option of optionsMenu; track $index) {
+                @if (option.active) {
+                    <li class="ml-2 mr-2 cursor-pointer p-2" routerLink="{{option.route}}">{{option.name}}</li>    
+                }
+            
+            }
     </ul>
 </div>
 }
