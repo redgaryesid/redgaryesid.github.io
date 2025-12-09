@@ -16,7 +16,7 @@ export class NavBar {
     { name: 'Experiencia', route: '/experiencia',active: true  },
     { name: 'Portafolio', route: '/portafolio',active: true  },
     { name: 'Blog', route: '/blog',active: false  },
-    { name: 'Contactame', route: '/contactame',active: false  }
+    { name: 'Contactame', route: '/contactame',active: true  }
   ];
   toggleMenu() {
     this.showMenu = !this.showMenu;
