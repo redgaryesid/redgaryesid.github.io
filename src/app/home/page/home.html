@@ -3,6 +3,14 @@
         <h1 class="glow-text text-6xl mb-3">Hola, soy <span class="neon-text">Edgar Rodriguez</span></h1>
         <p class="glow-text text-2xl">Full stack Developer</p>
         <p class="glow-text typing-effect text-sm">Web Full Stack con más de 7 años de experiencia creando soluciones digitales</p>
+        <div class="mt-6">
+            @for (skill of skills; track $index) {
+                <span class="inline-block bg-accent text-accent-text rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 glow-text">{{skill.name}}</span>
+                <img src="{{skill.icon}}" alt="{{skill.name}}" class="inline-block w-6 h-6 mr-2 mb-2">
+                
+            }
+        </div>
+        
     </div>
     <div class="w-60 h-auto">
         <img src="/profile.jpg" alt="">
