@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Home {
   skills: any[] = [
-    { name: 'Angular', icon: 'Angular.svg' },
-    { name: 'JavaScript', icon: 'javascript.svg' },
-    { name: 'HTML5', icon: 'html5.svg' },
-    { name: 'CSS3', icon: 'css3.svg' },
-    { name: 'Git', icon: 'git.svg' },
-    { name: 'C#', icon: 'netframework.svg' },
-    { name :'PostgreSQL', icon: 'postgresql.svg' }      
+    { name: 'Angular', icon: 'tech-icons/Angular.svg' },
+    { name: 'JavaScript', icon: 'tech-icons/javascript.svg' },
+    { name: 'HTML5', icon: 'tech-icons/html5.svg' },
+    { name: 'CSS3', icon: 'tech-icons/css3.svg' },
+    { name: 'Git', icon: 'tech-icons/git.svg' },
+    { name: 'C#', icon: 'tech-icons/netframework.svg' },
+    { name :'PostgreSQL', icon: 'tech-icons/postgresql.svg' }      
   ];
 
 }

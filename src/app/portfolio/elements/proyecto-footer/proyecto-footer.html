@@ -1,0 +1,20 @@
+<footer class=" my-2 w-full m-0 p-2 rounded-md">
+    <div class="flex flex-row justify-center gap-2">
+        @for (tecnologia of tecnologias; track $index) {
+        @switch (tecnologia) {
+        @case ('TypeScript') {
+        <img class="w-10 h-10" src="/tech-icons/typescript.svg" alt="TypeScript">
+        }
+        @case ('Angular') {
+        <img class="w-10 h-10" src="tech-icons/Angular.svg" alt="Angular">
+        }
+        @case ('CSS') {
+        <img class="w-10 h-10" src="tech-icons/css3.svg" alt="css3">
+        }
+        @case ('tailwindcss') {
+        <img class="w-10 h-10" src="tech-icons/tailwindcss.svg" alt="tailwindcss">
+        }
+        }
+        }
+    </div>
+</footer>
