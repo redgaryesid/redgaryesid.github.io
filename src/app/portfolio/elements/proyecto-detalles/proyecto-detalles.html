@@ -29,6 +29,12 @@
                 <p>{{proyecto.descripcion}}</p>
                 
             </div>
+            @if (proyecto.proyectoUrl) {
+            <div class="flex justify-center mb-3  cursor-pointer">
+                <a [href]="proyecto.proyectoUrl" target="_blank"
+                    class="border p-2 rounded-md bg-blue-600 text-primary-text">Ver Proyecto</a>
+            </div>
+            }
             <div class="w-full border border-b-gray-950"></div>
             <app-proyecto-footer [tecnologias]="proyecto.tecnologias"></app-proyecto-footer>
         </div>
